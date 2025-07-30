@@ -95,7 +95,7 @@ if __name__ == "__main__":
         tour_ids=[69117, 69118],
         vendor_ids=[3946, 3947],
         date_start="2025-07-01",
-        date_end="2025-07-30",
+        date_end="2025-08-30",
         time_range_start="08:00:00",
-        time_range_end="12:00:00"
+        time_range_end="10:00:00"
     )
