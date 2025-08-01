@@ -41,39 +41,7 @@ def generate_availabilities(
                         "tourId": tour_id,
                         "vendorId": vendor_id,
                         "endTime": end_time_str,
-                        "boosters": None,
-                        "priceProfile": {
-                            "priceProfileType": "PER_PERSON",
-                            "persons": [
-                                {
-                                    "type": "GENERAL",
-                                    "retailPrice": 50.95,
-                                    "listingPrice": 46.63,
-                                    "extraCharges": 0.00,
-                                    "isPricingInclusiveOfExtraCharges": False,
-                                    "discount": 8.48
-                                }
-                            ],
-                            "groups": [],
-                            "people": 0
-                        },
-                        "paxAvailability": [
-                            {
-                                "remaining": 1,
-                                "availability": "LIMITED",
-                                "paxTypes": ["GENERAL"]
-                            }
-                        ],
-                        "paxValidation": {
-                            "GENERAL": {
-                                "displayName": "General",
-                                "description": "",
-                                "minPax": 0,
-                                "maxPax": 10,
-                                "ageFrom": 6,
-                                "ageTo": 99
-                            }
-                        }
+                        "price": 100,
                     }
                     availabilities.append(availability_item)
 
@@ -95,7 +63,7 @@ if __name__ == "__main__":
         tour_ids=[69117, 69118],
         vendor_ids=[3946, 3947],
         date_start="2025-07-01",
-        date_end="2025-08-30",
+        date_end="2025-08-1",
         time_range_start="08:00:00",
         time_range_end="10:00:00"
     )
