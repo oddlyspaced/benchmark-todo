@@ -6,26 +6,23 @@ import { NavigationRouter } from './src/navigation/NavigationRouter';
 
 const queryClient = new QueryClient();
 const App = () => {
-  return (
-    <>
-      <GestureHandlerRootView
-        style={{
-          flex: 1,
-        }}
-      >
-        <SafeAreaProvider>
-          <QueryClientProvider client={queryClient}>
-            <NavigationContainer
-              key={'default'}
-            >
-              <NavigationRouter />
-            </NavigationContainer>
-          </QueryClientProvider>
-        </SafeAreaProvider>
-      </GestureHandlerRootView>
-
-    </>
-  );
+	return (
+		<>
+			<GestureHandlerRootView
+				style={{
+					flex: 1,
+				}}
+			>
+				<SafeAreaProvider>
+					<QueryClientProvider client={queryClient}>
+						<NavigationContainer key={'default'}>
+							<NavigationRouter />
+						</NavigationContainer>
+					</QueryClientProvider>
+				</SafeAreaProvider>
+			</GestureHandlerRootView>
+		</>
+	);
 };
 
 export default App;
