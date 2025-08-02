@@ -1,8 +1,7 @@
-export interface IAvailability {
-	startDate: string;
-	startTime: string;
+export interface IInventory {
+	date: string;
+	time: string;
 	tourId: number;
 	vendorId: number;
-	endTime: string;
 	price: number;
 }
