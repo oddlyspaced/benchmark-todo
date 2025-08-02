@@ -1,5 +1,6 @@
 import dayjs from 'dayjs';
 import { IInventory } from '../types/types';
+import { IPersonPrice, IPriceProfile } from '../types/inventoryTypes';
 
 export type TInventoryVendorIdPriceMap = {
 	[vendorId: number]: number;
@@ -45,4 +46,21 @@ export const parseInventory = (data: IInventory[]) => {
 
 	const timeTaken = timeEnd.diff(timeStart, 'milliseconds');
 	console.log('TEST: ' + timeTaken + ' // ' + data?.length);
+};
+
+export const getDisplayablePriceForPerPersonPricing = (
+	perPersonPaxDetails: IPersonPrice[],
+) => {
+	const adultDetails = perPersonPaxDetails.find((paxDetails) => {
+		return paxDetails.type == 'ADULT';
+	});
+	if (adultDetails === null || adultDetails === undefined) {
+		return perPersonPaxDetails[0].listingPrice;
+	} else {
+		return adultDetails.listingPrice;
+	}
+};
+
+export const getPriceFromPriceProfile = (priceProfile: IPriceProfile) => {
+	return getDisplayablePriceForPerPersonPricing(priceProfile?.persons);
 };
