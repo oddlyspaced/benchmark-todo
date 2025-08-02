@@ -1,10 +1,15 @@
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { Pressable, Text } from 'react-native';
-import bookingInventoryProcessor from '../utils/bookingInventoryProcessor';
-import { DUMMY_PRODUCT_DETAILS } from '../data/dummyProductDetailsResponse';
-import { DUMMY_INVENTORY_RESPONSE } from '../data/dummyInventoryResponse';
+import { useInventory } from '../hooks/useInventory';
 
 export const RNParserScreen = () => {
+	const { data, isFetching, isLoading } = useInventory();
+
+	if (!data || isFetching || isLoading) {
+		return <></>;
+	}
+
+	console.log(JSON.stringify(data));
+
 	return (
 		<SafeAreaView
 			style={{
@@ -12,16 +17,7 @@ export const RNParserScreen = () => {
 				backgroundColor: 'white',
 			}}
 		>
-			<Pressable
-				onPress={() => {
-					bookingInventoryProcessor.processInventory(
-						DUMMY_PRODUCT_DETAILS,
-						DUMMY_INVENTORY_RESPONSE,
-					);
-				}}
-			>
-				<Text>Start Processing</Text>
-			</Pressable>
+			{/* // todo */}
 		</SafeAreaView>
 	);
 };
