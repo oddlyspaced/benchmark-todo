@@ -1,5 +1,6 @@
 import { IInventoryResponse } from '../types/inventoryTypes';
 
+// https://api.headout.com/api/v7/tour-groups/7148/inventories/?currency=USD&from-date=2025-08-26&to-date=2025-08-31&language=en
 export const DUMMY_INVENTORY_RESPONSE: IInventoryResponse = {
 	availabilities: [
 		{

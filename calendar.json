@@ -1,0 +1,2066 @@
+{
+    "dates": {
+        "2025-08-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 35.47,
+            "retailPrice": 39.41,
+            "extraCharges": 3.55,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-05": {
+            "primaryPax": "ADULT",
+            "listingPrice": 35.47,
+            "retailPrice": 39.41,
+            "extraCharges": 3.55,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 35.47,
+            "retailPrice": 39.41,
+            "extraCharges": 3.55,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-07": {
+            "primaryPax": "ADULT",
+            "listingPrice": 35.47,
+            "retailPrice": 39.41,
+            "extraCharges": 3.55,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-08": {
+            "primaryPax": "ADULT",
+            "listingPrice": 23.89,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                46563,
+                57377
+            ],
+            "discountAvailable": true
+        },
+        "2025-08-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 18.77,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                46563,
+                57377
+            ],
+            "discountAvailable": true
+        },
+        "2025-08-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                35235,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                35235,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 28.05,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-15": {
+            "primaryPax": "ADULT",
+            "listingPrice": 47.87,
+            "retailPrice": 66.5,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-22": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-29": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-30": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-08-31": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-01": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-02": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-03": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-05": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-08": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-15": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-22": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-29": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-09-30": {
+            "primaryPax": "ADULT",
+            "listingPrice": 20.75,
+            "retailPrice": 34.65,
+            "extraCharges": 5.79,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                46563,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-01": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-02": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-03": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-07": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-08": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-15": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-22": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-29": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-30": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-10-31": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-01": {
+            "primaryPax": "ADULT",
+            "listingPrice": 52.05,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-03": {
+            "primaryPax": "ADULT",
+            "listingPrice": 52.05,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 56.33,
+            "retailPrice": 62.59,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-05": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-07": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-08": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-15": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-22": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-29": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-11-30": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-01": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-02": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-03": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-05": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-08": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-15": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-22": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 57.27,
+            "retailPrice": 63.63,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-29": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-30": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2025-12-31": {
+            "primaryPax": "ADULT",
+            "listingPrice": 36.4,
+            "retailPrice": 40.45,
+            "extraCharges": 4.52,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                25157,
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-02": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-03": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-04": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-05": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-06": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-07": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-09": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-10": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-11": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-12": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-13": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-14": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-16": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-17": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-18": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-19": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-20": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-21": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-23": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-24": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-25": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-26": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-27": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        },
+        "2026-01-28": {
+            "primaryPax": "ADULT",
+            "listingPrice": 65.07,
+            "retailPrice": 72.3,
+            "extraCharges": 0.0,
+            "isPricingInclusiveOfExtraCharges": false,
+            "availableTourIds": [
+                57377
+            ],
+            "discountAvailable": false
+        }
+    },
+    "metadata": {
+        "startDate": "2025-08-04",
+        "endDate": "2026-01-28",
+        "currency": "USD"
+    }
+}
