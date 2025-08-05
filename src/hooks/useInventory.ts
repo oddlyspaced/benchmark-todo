@@ -5,7 +5,7 @@ import { processInventory } from '../utils/inventoryUtils';
 
 export const useInventory = () => {
 	const { data, isFetching, isLoading } = useQuery({
-		queryKey: ['INVENTORY'],
+		queryKey: ['INVENTORY', DUMMY_INVENTORY_RESPONSE?.availabilities?.length],
 		queryFn: () =>
 			processInventory(DUMMY_PRODUCT_DETAILS, DUMMY_INVENTORY_RESPONSE),
 	});
