@@ -1,5 +1,6 @@
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useInventory } from '../hooks/useInventory';
+import { Text } from 'react-native';
 
 export const RNParserScreen = () => {
 	const { data, isFetching, isLoading } = useInventory();
@@ -17,7 +18,8 @@ export const RNParserScreen = () => {
 				backgroundColor: 'white',
 			}}
 		>
-			{/* // todo */}
+			<Text>Variants: {Object.keys(data?.variantInfoMap)?.length}</Text>
+			<Text>Tours: {Object.keys(data?.tourIdsInfoMap)?.length}</Text>
 		</SafeAreaView>
 	);
 };
