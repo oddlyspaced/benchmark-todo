@@ -1,12 +1,23 @@
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useInventory } from '../hooks/useInventory';
-import { Text } from 'react-native';
+import { ActivityIndicator, Text } from 'react-native';
 
 export const RNParserScreen = () => {
 	const { data, isFetching, isLoading } = useInventory();
 
 	if (!data || isFetching || isLoading) {
-		return <></>;
+		return (
+			<SafeAreaView
+				style={{
+					flex: 1,
+					backgroundColor: 'white',
+					alignItems: 'center',
+					justifyContent: 'center',
+				}}
+			>
+				<ActivityIndicator />
+			</SafeAreaView>
+		);
 	}
 
 	console.log(JSON.stringify(data));
