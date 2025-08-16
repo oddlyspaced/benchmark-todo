@@ -8,11 +8,12 @@ import {
 	Text,
 	View,
 } from 'react-native';
-import dayjs from 'dayjs';
 import { useInventory } from '../hooks/useInventory';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Chip } from '../atoms/Chip';
 import { FilterChips } from '../atoms/FilterChips';
+import { DateRail } from '../components/DateRail';
+import { InlineShowDetails } from '../components/InlineShowDetails';
 
 type TTheatreVM = {
 	cinemaId: string;
@@ -158,37 +159,6 @@ export const RNParserScreen = () => {
 		</View>
 	);
 
-	const DateRail = ({
-		days,
-		selected,
-		onSelect,
-	}: {
-		days: string[];
-		selected?: string;
-		onSelect: (d: string) => void;
-	}) => (
-		<View style={styles.filterSection}>
-			<Text style={styles.filterTitle}>Date</Text>
-			<FlatList
-				data={days}
-				keyExtractor={(d) => d}
-				horizontal
-				showsHorizontalScrollIndicator={false}
-				contentContainerStyle={styles.chipsRow}
-				renderItem={({ item }) => {
-					const label = dayjs(item).format('ddd D');
-					return (
-						<Chip
-							label={label}
-							selected={selected === item}
-							onPress={() => onSelect(item)}
-						/>
-					);
-				}}
-			/>
-		</View>
-	);
-
 	const TheatreCard = ({ item }: { item: TTheatreVM }) => (
 		<View style={styles.card}>
 			<Text style={styles.cardTitle}>{item.cinemaName}</Text>
@@ -210,7 +180,7 @@ export const RNParserScreen = () => {
 			</View>
 
 			{expandedKey && expandedKey.cinemaId === item.cinemaId && (
-				<ShowDetailInline
+				<InlineShowDetails
 					show={item.shows.find((s) => s.time === expandedKey.time)!}
 				/>
 			)}
@@ -268,53 +238,6 @@ export const RNParserScreen = () => {
 	return contentUI;
 };
 
-function ShowDetailInline({
-	show,
-}: {
-	show: {
-		time: string;
-		price: number;
-		available: number;
-		seatClasses?: Array<{
-			code: string;
-			name?: string;
-			price: number;
-			available: number;
-		}>;
-	};
-}) {
-	return (
-		<View style={styles.detailBox}>
-			<View style={styles.detailRow}>
-				<Text style={styles.detailKey}>Price</Text>
-				<Text style={styles.detailVal}>₹{show?.price}</Text>
-			</View>
-			<View style={styles.detailRow}>
-				<Text style={styles.detailKey}>Available</Text>
-				<Text style={styles.detailVal}>{show?.available}</Text>
-			</View>
-
-			{show.seatClasses && show.seatClasses.length > 0 && (
-				<View style={styles.seatClassWrap}>
-					{show.seatClasses.map((c) => (
-						<View key={c.code} style={styles.seatClassRow}>
-							<Text style={styles.seatClassName}>
-								{c.name ?? c.code}
-							</Text>
-							<Text style={styles.seatClassPrice}>
-								₹{c.price}
-							</Text>
-							<Text style={styles.seatClassAvail}>
-								{c.available} left
-							</Text>
-						</View>
-					))}
-				</View>
-			)}
-		</View>
-	);
-}
-
 const styles = StyleSheet.create({
 	container: { flex: 1, backgroundColor: '#0a0a0a' },
 
@@ -335,9 +258,6 @@ const styles = StyleSheet.create({
 		paddingHorizontal: 12,
 		backgroundColor: '#0a0a0a',
 	},
-	filterSection: { marginBottom: 8 },
-	filterTitle: { color: '#bdbdbd', fontSize: 12, marginBottom: 6 },
-	chipsRow: { gap: 8 },
 
 	listContent: { padding: 12, paddingBottom: 24 },
 	card: {
@@ -355,28 +275,6 @@ const styles = StyleSheet.create({
 		marginBottom: 8,
 	},
 	timesWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
-
-	detailBox: {
-		marginTop: 10,
-		backgroundColor: '#0f0f0f',
-		borderRadius: 10,
-		borderWidth: StyleSheet.hairlineWidth,
-		borderColor: '#2a2a2a',
-		padding: 10,
-	},
-	detailRow: {
-		flexDirection: 'row',
-		justifyContent: 'space-between',
-		marginBottom: 6,
-	},
-	detailKey: { color: '#a3a3a3', fontSize: 13 },
-	detailVal: { color: '#fff', fontSize: 14, fontWeight: '600' },
-
-	seatClassWrap: { marginTop: 8, gap: 6 },
-	seatClassRow: { flexDirection: 'row', justifyContent: 'space-between' },
-	seatClassName: { color: '#eaeaea', fontSize: 13 },
-	seatClassPrice: { color: '#eaeaea', fontSize: 13 },
-	seatClassAvail: { color: '#bdbdbd', fontSize: 12 },
 
 	loadingWrap: {
 		flex: 1,
