@@ -1,57 +1,60 @@
+export interface ISeatClass {
+	code: string;
+	name?: string;
+	price: number;
+	available: number;
+}
+
+export interface ICinemaMeta {
+	name: string;
+	city?: string;
+	lat?: number;
+	lng?: number;
+}
+
+export interface IShowInventoryItem {
+	languageCode: string; // e.g. "en"
+	formatCode: string; // e.g. "2d"
+	date: string; // "YYYY-MM-DD"
+	cinemaId: string; // stable id
+	cinemaName?: string; // optional (can be looked up from dictionaries.cinemas)
+	showId: string; // unique show id
+	showTime: string; // "HH:mm"
+	basePrice: number; // per-seat price
+	availableSeats: number; // remaining seats
+	capacity?: number;
+	seatClasses?: ISeatClass[];
+	auditorium?: string;
+	screenType?: string;
+	lastUpdatedIso?: string;
+}
+
 export interface IInventoryResponse {
-	availabilities: IAvailability[];
-	fromDate: string;
-	toDate: string;
-	currencyCode: string;
+	currency: string;
+	items: IShowInventoryItem[];
+	dictionaries?: {
+		languages?: Record<string, string>;
+		formats?: Record<string, string>;
+		cinemas?: Record<string, ICinemaMeta>;
+	};
+	generatedAtIso?: string;
 }
 
-export interface IAvailability {
-	startDate: string;
-	startTime: string;
-	tourId: number;
-	vendorId: number;
-	endTime: string;
-	boosters: IBoosters | null;
-	priceProfile: IPriceProfile;
-	paxAvailability: IPaxAvailability[];
-	paxValidation: Record<string, IPPaxValidationItem>;
-}
-
-export interface IBoosters {
-	[key: string]: unknown;
-}
-
-export interface IPriceProfile {
-	priceProfileType: string;
-	persons: IPersonPrice[];
-	groups: IGroup[];
-	people: number;
-}
-
-export interface IPersonPrice {
-	type: string;
-	retailPrice: number;
-	listingPrice: number;
-	extraCharges: number;
-	isPricingInclusiveOfExtraCharges: boolean;
-	discount: number;
-}
-
-export interface IGroup {
-	[key: string]: unknown;
-}
-
-export interface IPaxAvailability {
-	remaining: number;
-	availability: string;
-	paxTypes: string[];
-}
-
-export interface IPPaxValidationItem {
-	displayName: string;
-	description: string;
-	minPax: number;
-	maxPax: number;
-	ageFrom: number | null;
-	ageTo: number | null;
-}
+export type TInventoryMap = {
+	[language: string]: {
+		[format: string]: {
+			[date: string]: {
+				[cinemaId: string]: {
+					cinemaName: string;
+					shows: {
+						[timeHHmm: string]: {
+							price: number;
+							availableSeats: number;
+							seatClasses?: ISeatClass[];
+						};
+					};
+				};
+			};
+		};
+	};
+};
