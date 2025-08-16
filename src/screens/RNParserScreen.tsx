@@ -4,7 +4,6 @@ import {
 	ActivityIndicator,
 	FlatList,
 	Pressable,
-	ScrollView,
 	StyleSheet,
 	Text,
 	View,
@@ -64,6 +63,31 @@ export const RNParserScreen = () => {
 		undefined,
 	);
 
+	// add near other useState declarations
+	const [expandedKey, setExpandedKey] = useState<{
+		cinemaId: string;
+		time: string;
+	} | null>(null);
+
+	// handlers that invalidate deeper selections
+	const handleSelectLanguage = useCallback((lang: string) => {
+		setSelectedLanguage(lang);
+		setSelectedFormat(undefined); // invalidate deeper
+		setSelectedDate(undefined); // invalidate deeper
+		setExpandedKey(null); // collapse details
+	}, []);
+
+	const handleSelectFormat = useCallback((fmt: string) => {
+		setSelectedFormat(fmt);
+		setSelectedDate(undefined); // invalidate deeper
+		setExpandedKey(null); // collapse details
+	}, []);
+
+	const handleSelectDate = useCallback((d: string) => {
+		setSelectedDate(d);
+		setExpandedKey(null); // collapse details
+	}, []);
+
 	useEffect(() => {
 		if (languages.length && !selectedLanguage)
 			setSelectedLanguage(languages[0]);
@@ -110,10 +134,6 @@ export const RNParserScreen = () => {
 		}));
 	}, [map, selectedLanguage, selectedFormat, selectedDate]);
 
-	const [expandedKey, setExpandedKey] = useState<{
-		cinemaId: string;
-		time: string;
-	} | null>(null);
 	const toggleExpand = useCallback((cinemaId: string, time: string) => {
 		setExpandedKey((k) =>
 			k && k.cinemaId === cinemaId && k.time === time
@@ -213,18 +233,20 @@ export const RNParserScreen = () => {
 					title='Language'
 					data={languages}
 					selected={selectedLanguage}
-					onSelect={setSelectedLanguage}
+					onSelect={handleSelectLanguage}
 				/>
+
 				<FilterChips
 					title='Format'
 					data={formats}
 					selected={selectedFormat}
-					onSelect={setSelectedFormat}
+					onSelect={handleSelectFormat}
 				/>
+
 				<DateRail
 					days={dates}
 					selected={selectedDate}
-					onSelect={setSelectedDate}
+					onSelect={handleSelectDate}
 				/>
 			</View>
 
