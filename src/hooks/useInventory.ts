@@ -1,6 +1,4 @@
-// useInventory.ts
 import { useQuery } from '@tanstack/react-query';
-import dayjs from 'dayjs';
 import { IInventoryResponse, TInventoryMap } from '../types/inventoryTypes';
 import {
 	generateBackendInventory,
@@ -39,7 +37,7 @@ const MASSIVE = {
 	showsPerCinemaPerDay: 5,
 	includeSeatClasses: true, // increases payload size per row
 	seed: 42,
-};
+} as const;
 
 export const useInventory = (): TUseInventoryData => {
 	const { data, isLoading, refetch } = useQuery({
