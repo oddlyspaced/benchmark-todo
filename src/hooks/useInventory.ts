@@ -22,20 +22,31 @@ type TUseInventoryData = {
 const DEFAULTS = {
 	languagesCount: 3,
 	formatsPerLanguage: 3,
-	dateStart: dayjs().format('YYYY-MM-DD'),
-	dateEnd: dayjs().add(6, 'day').format('YYYY-MM-DD'),
+	dateStart: '2025-01-01',
+	dateEnd: '2025-01-7',
 	cinemasCount: 6,
 	showsPerCinemaPerDay: 5,
 	includeSeatClasses: true,
 	seed: 42,
 } as const;
 
+const MASSIVE = {
+	languagesCount: 3,
+	formatsPerLanguage: 3,
+	dateStart: '2025-01-01',
+	dateEnd: '2025-01-30', // 30 days inclusive
+	cinemasCount: 6,
+	showsPerCinemaPerDay: 5,
+	includeSeatClasses: true, // increases payload size per row
+	seed: 42,
+};
+
 export const useInventory = (): TUseInventoryData => {
 	const { data, isLoading, refetch } = useQuery({
-		queryKey: ['INVENTORY', DEFAULTS],
+		queryKey: ['INVENTORY', DEFAULTS, MASSIVE],
 		queryFn: async () => {
 			const t0 = Date.now();
-			const resp = generateBackendInventory({ ...DEFAULTS });
+			const resp = generateBackendInventory({ ...MASSIVE });
 			const t1 = Date.now();
 			const map = buildInventoryMap(resp);
 			const t2 = Date.now();
