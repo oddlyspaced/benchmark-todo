@@ -56,11 +56,11 @@ export const generateBackendInventory = ({
 	const langPool = [
 		['en', 'English'],
 		['hi', 'Hindi'],
+		['ka', 'Kannada'],
 		['ta', 'Tamil'],
 		['te', 'Telugu'],
 		['ml', 'Malayalam'],
 		['mr', 'Marathi'],
-		['kn', 'Kannada'],
 		['bn', 'Bengali'],
 		['pa', 'Punjabi'],
 		['gu', 'Gujarati'],

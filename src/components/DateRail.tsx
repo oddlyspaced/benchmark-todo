@@ -19,7 +19,7 @@ export const DateRail = ({
 			showsHorizontalScrollIndicator={false}
 			ItemSeparatorComponent={() => <View style={styles.separator} />}
 			renderItem={({ item }) => {
-				const label = dayjs(item).format('ddd D');
+				const label = dayjs(item).format('ddd - D MMM');
 				return (
 					<Chip
 						label={label}

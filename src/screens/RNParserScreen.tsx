@@ -285,7 +285,13 @@ const styles = StyleSheet.create({
 		fontSize: 16,
 		fontWeight: '600',
 	},
-	timesWrap: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 10, gap: 2, },
+	timesWrap: {
+		flexDirection: 'row',
+		flexWrap: 'wrap',
+		marginTop: 10,
+		gap: 2,
+		marginHorizontal: -4,
+	},
 
 	loadingWrap: {
 		flex: 1,
