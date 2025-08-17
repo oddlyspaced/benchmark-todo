@@ -1,31 +1,18 @@
 import { Pressable, StyleSheet, Text } from 'react-native';
 
-export const Chip = ({
-	label,
-	selected,
-	onPress,
-	disabled,
-}: {
+interface IChipProps {
 	label: string;
 	selected?: boolean;
 	onPress?: () => void;
-	disabled?: boolean;
-}) => (
+}
+
+export const Chip = ({ label, selected, onPress }: IChipProps) => (
 	<Pressable
 		onPress={onPress}
-		disabled={disabled}
-		style={[
-			styles.chip,
-			selected && styles.chipSelected,
-			disabled && styles.chipDisabled,
-		]}
+		style={[styles.chip, selected && styles.chipSelected]}
 	>
 		<Text
-			style={[
-				styles.chipText,
-				selected && styles.chipTextSelected,
-				disabled && styles.chipTextDisabled,
-			]}
+			style={[styles.chipText, selected && styles.chipTextSelected]}
 			numberOfLines={1}
 		>
 			{label}
@@ -42,12 +29,9 @@ const styles = StyleSheet.create({
 		borderColor: '#2d2d2d',
 		alignItems: 'center',
 		justifyContent: 'center',
-		marginRight: 8,
 		backgroundColor: '#121212',
 	},
 	chipSelected: { backgroundColor: '#1f6feb', borderColor: '#1f6feb' },
-	chipDisabled: { opacity: 0.5 },
-	chipText: { color: '#e0e0e0', fontSize: 13 },
+	chipText: { color: 'white', fontSize: 13 },
 	chipTextSelected: { color: 'white', fontWeight: '600' },
-	chipTextDisabled: { color: '#8a8a8a' },
 });

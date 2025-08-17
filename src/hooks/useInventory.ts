@@ -30,13 +30,10 @@ const DEFAULTS = {
 	seed: 42,
 } as const;
 
-export function useInventory(): TUseInventoryData {
+export const useInventory = (): TUseInventoryData => {
 	const { data, isLoading, refetch } = useQuery({
-		queryKey: ['inventory', DEFAULTS],
+		queryKey: ['INVENTORY', DEFAULTS],
 		queryFn: async () => {
-			// Simulate network latency
-			await new Promise((r) => setTimeout(r, 450));
-
 			const t0 = Date.now();
 			const resp = generateBackendInventory({ ...DEFAULTS });
 			const t1 = Date.now();
@@ -49,7 +46,6 @@ export function useInventory(): TUseInventoryData {
 
 			return { resp, map, timings: { generateMs, reduceMs, totalMs } };
 		},
-		staleTime: 60_000,
 	});
 
 	return {
@@ -59,4 +55,4 @@ export function useInventory(): TUseInventoryData {
 		refetch,
 		timings: data?.timings ?? { generateMs: 0, reduceMs: 0, totalMs: 0 },
 	};
-}
+};

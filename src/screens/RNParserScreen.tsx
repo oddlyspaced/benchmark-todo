@@ -1,4 +1,3 @@
-// ShowExplorerScreen.tsx
 import React, { useMemo, useState, useCallback, useEffect } from 'react';
 import {
 	ActivityIndicator,
@@ -14,6 +13,10 @@ import { Chip } from '../atoms/Chip';
 import { FilterChips } from '../atoms/FilterChips';
 import { DateRail } from '../components/DateRail';
 import { InlineShowDetails } from '../components/InlineShowDetails';
+import dayjs from 'dayjs';
+import customParseFormat from 'dayjs/plugin/customParseFormat';
+
+dayjs.extend(customParseFormat);
 
 type TTheatreVM = {
 	cinemaId: string;
@@ -32,7 +35,7 @@ type TTheatreVM = {
 };
 
 export const RNParserScreen = () => {
-	const { map, isLoading, refetch, timings } = useInventory();
+	const { response, map, isLoading, refetch, timings } = useInventory();
 
 	// Selection state
 	const languages = useMemo(() => (map ? Object.keys(map) : []), [map]);
@@ -171,7 +174,7 @@ export const RNParserScreen = () => {
 					return (
 						<Chip
 							key={s.time}
-							label={s.time}
+							label={dayjs(s.time, 'HH:mm').format('hh:mm A')}
 							selected={Boolean(selected)}
 							onPress={() => toggleExpand(item.cinemaId, s.time)}
 						/>
@@ -192,8 +195,9 @@ export const RNParserScreen = () => {
 			{/* Benchmark bar */}
 			<View style={styles.hud}>
 				<Text style={styles.hudText}>
-					gen {timings.generateMs}ms · reduce {timings.reduceMs}ms ·
-					total {timings.totalMs}ms
+					item count {response?.items?.length} · gen{' '}
+					{timings.generateMs}ms · reduce {timings.reduceMs}ms · total{' '}
+					{timings.totalMs}ms
 				</Text>
 			</View>
 
@@ -211,12 +215,20 @@ export const RNParserScreen = () => {
 					data={formats}
 					selected={selectedFormat}
 					onSelect={handleSelectFormat}
+					containerStyle={{
+						marginTop: 16,
+					}}
 				/>
 
 				<DateRail
-					days={dates}
+					data={dates}
 					selected={selectedDate}
 					onSelect={handleSelectDate}
+					containerStyle={{
+						marginTop: 16,
+						marginBottom: 16,
+					}}
+					title={'Date'}
 				/>
 			</View>
 
@@ -239,7 +251,7 @@ export const RNParserScreen = () => {
 };
 
 const styles = StyleSheet.create({
-	container: { flex: 1, backgroundColor: '#0a0a0a' },
+	container: { flex: 1, backgroundColor: '#000000' },
 
 	// Benchmark HUD
 	hud: {
@@ -272,9 +284,8 @@ const styles = StyleSheet.create({
 		color: 'white',
 		fontSize: 16,
 		fontWeight: '600',
-		marginBottom: 8,
 	},
-	timesWrap: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
+	timesWrap: { flexDirection: 'row', flexWrap: 'wrap', marginTop: 10, gap: 2, },
 
 	loadingWrap: {
 		flex: 1,

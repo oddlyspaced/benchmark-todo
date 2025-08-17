@@ -31,10 +31,7 @@ export const InlineShowDetails = ({ show }: IInlineShowDetails) => {
 					{show.seatClasses.map((c) => (
 						<View key={c.code} style={styles.seatClassRow}>
 							<Text style={styles.seatClassName}>
-								{c.name ?? c.code}
-							</Text>
-							<Text style={styles.seatClassPrice}>
-								₹{c.price}
+								{c.name ?? c.code} (₹{c?.price})
 							</Text>
 							<Text style={styles.seatClassAvail}>
 								{c.available} left
@@ -67,6 +64,5 @@ const styles = StyleSheet.create({
 	seatClassWrap: { marginTop: 8, gap: 6 },
 	seatClassRow: { flexDirection: 'row', justifyContent: 'space-between' },
 	seatClassName: { color: '#eaeaea', fontSize: 13 },
-	seatClassPrice: { color: '#eaeaea', fontSize: 13 },
 	seatClassAvail: { color: '#bdbdbd', fontSize: 12 },
 });

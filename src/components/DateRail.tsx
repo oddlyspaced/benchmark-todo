@@ -1,22 +1,23 @@
 import dayjs from 'dayjs';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { Chip } from '../atoms/Chip';
+import { IFilterChipsProps } from '../atoms/FilterChips';
 
-interface IDateRail {
-	days: string[];
-	selected?: string;
-	onSelect: (d: string) => void;
-}
-
-export const DateRail = ({ days, selected, onSelect }: IDateRail) => (
-	<View style={styles.filterSection}>
-		<Text style={styles.filterTitle}>Date</Text>
+export const DateRail = ({
+	data,
+	selected,
+	onSelect,
+	containerStyle,
+	title,
+}: IFilterChipsProps) => (
+	<View style={containerStyle}>
+		<Text style={styles.filterTitle}>{title}</Text>
 		<FlatList
-			data={days}
+			data={data}
 			keyExtractor={(d) => d}
 			horizontal
 			showsHorizontalScrollIndicator={false}
-			contentContainerStyle={styles.chipsRow}
+			ItemSeparatorComponent={() => <View style={styles.separator} />}
 			renderItem={({ item }) => {
 				const label = dayjs(item).format('ddd D');
 				return (
@@ -32,7 +33,6 @@ export const DateRail = ({ days, selected, onSelect }: IDateRail) => (
 );
 
 const styles = StyleSheet.create({
-	filterSection: { marginBottom: 8 },
-	filterTitle: { color: '#bdbdbd', fontSize: 12, marginBottom: 6 },
-	chipsRow: { gap: 8 },
+	filterTitle: { color: 'white', fontSize: 12, marginBottom: 12 },
+	separator: { width: 8 },
 });
