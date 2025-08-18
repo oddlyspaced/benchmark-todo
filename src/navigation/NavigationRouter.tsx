@@ -3,6 +3,7 @@ import { TNavigationRouterProps } from './NavigationRouterProps';
 import { HomeScreen } from '../screens/HomeScreen';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RNParserScreen } from '../screens/RNParserScreen';
+import { NativeParserScreen } from '../screens/NativeParserScreen';
 
 const AppNavigator = createNativeStackNavigator<TNavigationRouterProps>();
 export type TNavigationProps = StackNavigationProp<TNavigationRouterProps, any>;
@@ -25,6 +26,13 @@ export const NavigationRouter = () => {
 			<AppNavigator.Screen
 				name={'RNParserScreen'}
 				component={RNParserScreen}
+				options={{
+					headerShown: false,
+				}}
+			/>
+			<AppNavigator.Screen
+				name={'NativeParserScreen'}
+				component={NativeParserScreen}
 				options={{
 					headerShown: false,
 				}}

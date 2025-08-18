@@ -33,6 +33,25 @@ export const HomeScreen = () => {
 					React Native Parsing Logic Screen
 				</Text>
 			</Pressable>
+			<Pressable
+				style={{
+					backgroundColor: 'black',
+					padding: 10,
+					alignItems: 'center',
+					borderRadius: 8,
+				}}
+				onPress={() => navigation?.navigate('NativeParserScreen', {})}
+			>
+				<Text
+					style={{
+						color: 'white',
+						fontSize: 16,
+						fontWeight: '500',
+					}}
+				>
+					Native Parsing Logic Screen
+				</Text>
+			</Pressable>
 		</SafeAreaView>
 	);
 };
