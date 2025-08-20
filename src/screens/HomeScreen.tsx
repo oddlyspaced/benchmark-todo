@@ -1,5 +1,5 @@
 import { useNavigation } from '@react-navigation/native';
-import { Pressable, Text } from 'react-native';
+import { Pressable, StatusBar, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { TNavigationProps } from '../navigation/NavigationRouter';
 
@@ -7,51 +7,56 @@ export const HomeScreen = () => {
 	const navigation = useNavigation<TNavigationProps>();
 
 	return (
-		<SafeAreaView
-			style={{
-				flex: 1,
-				backgroundColor: 'white',
-				paddingHorizontal: 16,
-			}}
-		>
-			<Pressable
+		<>
+			<StatusBar barStyle={'dark-content'} />
+			<SafeAreaView
 				style={{
-					backgroundColor: 'black',
-					padding: 10,
-					alignItems: 'center',
-					borderRadius: 8,
+					flex: 1,
+					backgroundColor: 'white',
+					paddingHorizontal: 16,
 				}}
-				onPress={() => navigation?.navigate('RNParserScreen', {})}
 			>
-				<Text
+				<Pressable
 					style={{
-						color: 'white',
-						fontSize: 16,
-						fontWeight: '500',
+						backgroundColor: 'black',
+						padding: 10,
+						alignItems: 'center',
+						borderRadius: 8,
 					}}
+					onPress={() => navigation?.navigate('RNParserScreen', {})}
 				>
-					React Native Parsing Logic Screen
-				</Text>
-			</Pressable>
-			<Pressable
-				style={{
-					backgroundColor: 'black',
-					padding: 10,
-					alignItems: 'center',
-					borderRadius: 8,
-				}}
-				onPress={() => navigation?.navigate('NativeParserScreen', {})}
-			>
-				<Text
+					<Text
+						style={{
+							color: 'white',
+							fontSize: 16,
+							fontWeight: '500',
+						}}
+					>
+						React Native Parsing Logic Screen
+					</Text>
+				</Pressable>
+				<Pressable
 					style={{
-						color: 'white',
-						fontSize: 16,
-						fontWeight: '500',
+						backgroundColor: 'black',
+						padding: 10,
+						alignItems: 'center',
+						borderRadius: 8,
 					}}
+					onPress={() =>
+						navigation?.navigate('NativeParserScreen', {})
+					}
 				>
-					Native Parsing Logic Screen
-				</Text>
-			</Pressable>
-		</SafeAreaView>
+					<Text
+						style={{
+							color: 'white',
+							fontSize: 16,
+							fontWeight: '500',
+						}}
+					>
+						Native Parsing Logic Screen
+					</Text>
+				</Pressable>
+			</SafeAreaView>
+		</>
 	);
 };
