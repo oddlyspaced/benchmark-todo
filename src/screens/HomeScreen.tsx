@@ -25,7 +25,7 @@ const DEFAULTS = {
 	seed: 42,
 } as const;
 
-type FormState = {
+type TFormState = {
 	languagesCount: string;
 	formatsPerLanguage: string;
 	dateStart: string;
@@ -39,7 +39,7 @@ type FormState = {
 export const HomeScreen = () => {
 	const navigation = useNavigation<TNavigationProps>();
 
-	const [form, setForm] = useState<FormState>({
+	const [form, setForm] = useState<TFormState>({
 		languagesCount: String(DEFAULTS.languagesCount),
 		formatsPerLanguage: String(DEFAULTS.formatsPerLanguage),
 		dateStart: DEFAULTS.dateStart,
@@ -51,8 +51,8 @@ export const HomeScreen = () => {
 	});
 
 	const setField = useCallback(
-		(k: keyof FormState, v: string | boolean) =>
-			setForm((s) => ({ ...s, [k]: v } as FormState)),
+		(k: keyof TFormState, v: string | boolean) =>
+			setForm((s) => ({ ...s, [k]: v } as TFormState)),
 		[],
 	);
 
