@@ -1,5 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
-import { IInventoryResponse, TInventoryMap } from '../types/inventoryTypes';
+import {
+	IInventoryResponse,
+	TBenchmarkFormState,
+	TInventoryMap,
+} from '../types/inventoryTypes';
 import {
 	generateBackendInventory,
 	buildInventoryMap,
@@ -17,34 +21,45 @@ type TUseInventoryData = {
 	};
 };
 
-const DEFAULTS = {
-	languagesCount: 3,
-	formatsPerLanguage: 3,
-	dateStart: '2025-01-01',
-	dateEnd: '2025-01-7',
-	cinemasCount: 6,
-	showsPerCinemaPerDay: 5,
-	includeSeatClasses: true,
-	seed: 42,
-} as const;
+// const DEFAULTS = {
+// 	languagesCount: 3,
+// 	formatsPerLanguage: 3,
+// 	dateStart: '2025-01-01',
+// 	dateEnd: '2025-01-7',
+// 	cinemasCount: 6,
+// 	showsPerCinemaPerDay: 5,
+// 	includeSeatClasses: true,
+// 	seed: 42,
+// } as const;
 
-const MASSIVE = {
-	languagesCount: 3,
-	formatsPerLanguage: 3,
-	dateStart: '2025-01-01',
-	dateEnd: '2025-01-30', // 30 days inclusive
-	cinemasCount: 6,
-	showsPerCinemaPerDay: 5,
-	includeSeatClasses: true, // increases payload size per row
-	seed: 42,
-} as const;
+// const MASSIVE = {
+// 	languagesCount: 3,
+// 	formatsPerLanguage: 3,
+// 	dateStart: '2025-01-01',
+// 	dateEnd: '2025-01-30', // 30 days inclusive
+// 	cinemasCount: 6,
+// 	showsPerCinemaPerDay: 5,
+// 	includeSeatClasses: true, // increases payload size per row
+// 	seed: 42,
+// } as const;
 
-export const useInventory = (): TUseInventoryData => {
+export const useInventory = (
+	params: TBenchmarkFormState,
+): TUseInventoryData => {
 	const { data, isLoading, refetch } = useQuery({
-		queryKey: ['INVENTORY', DEFAULTS, MASSIVE],
+		queryKey: ['INVENTORY', JSON.stringify(params)],
 		queryFn: async () => {
 			const t0 = Date.now();
-			const resp = generateBackendInventory({ ...MASSIVE });
+			const resp = generateBackendInventory({
+				languagesCount: parseInt(params?.languagesCount),
+				formatsPerLanguage: parseInt(params?.formatsPerLanguage),
+				dateStart: params?.dateStart,
+				dateEnd: params?.dateEnd,
+				cinemasCount: parseInt(params?.cinemasCount),
+				showsPerCinemaPerDay: parseInt(params?.showsPerCinemaPerDay),
+				includeSeatClasses: params?.includeSeatClasses,
+				seed: parseInt(params?.seed),
+			});
 			const t1 = Date.now();
 			const map = buildInventoryMap(resp);
 			const t2 = Date.now();

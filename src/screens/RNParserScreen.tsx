@@ -16,6 +16,9 @@ import { DateRail } from '../components/DateRail';
 import { InlineShowDetails } from '../components/InlineShowDetails';
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { TNavigationRouterProps } from '../navigation/NavigationRouterProps';
+import { RouteProp } from '@react-navigation/native';
 
 dayjs.extend(customParseFormat);
 
@@ -35,8 +38,21 @@ type TTheatreVM = {
 	}>;
 };
 
-export const RNParserScreen = () => {
-	const { response, map, isLoading, refetch, timings } = useInventory();
+type TNavigationProps = StackNavigationProp<
+	TNavigationRouterProps,
+	'RNParserScreen'
+>;
+type TRouteProps = RouteProp<TNavigationRouterProps, 'RNParserScreen'>;
+
+interface IRNParserScreenProps {
+	navigation: TNavigationProps;
+	route: TRouteProps;
+}
+
+export const RNParserScreen = ({ route }: IRNParserScreenProps) => {
+	const { response, map, isLoading, refetch, timings } = useInventory(
+		route?.params?.params,
+	);
 
 	// Selection state
 	const languages = useMemo(() => (map ? Object.keys(map) : []), [map]);

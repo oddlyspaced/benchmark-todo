@@ -90,12 +90,6 @@ export const HomeScreen = () => {
 		return true;
 	};
 
-	const onNavigate = (screen: 'RNParserScreen' | 'NativeParserScreen') => {
-		if (!validateDates()) return;
-		// Pass params so screens can override their defaults
-		navigation?.navigate(screen as any, { generatorParams: payload });
-	};
-
 	const onReset = () =>
 		setForm({
 			languagesCount: String(DEFAULTS.languagesCount),
@@ -132,7 +126,7 @@ export const HomeScreen = () => {
 
 					{/* Numeric fields */}
 					<Field
-						label='Languages Count'
+						label='Languages Count (Max: 10)'
 						value={form.languagesCount}
 						onChangeText={(t) =>
 							setField('languagesCount', t.replace(/[^0-9]/g, ''))
@@ -140,7 +134,7 @@ export const HomeScreen = () => {
 						keyboardType='number-pad'
 					/>
 					<Field
-						label='Formats per Language'
+						label='Formats per Language (Max: 5)'
 						value={form.formatsPerLanguage}
 						onChangeText={(t) =>
 							setField(
@@ -250,7 +244,11 @@ export const HomeScreen = () => {
 							alignItems: 'center',
 							borderRadius: 8,
 						}}
-						onPress={() => onNavigate('RNParserScreen')}
+						onPress={() =>
+							navigation?.navigate('RNParserScreen', {
+								params: form,
+							})
+						}
 					>
 						<Text
 							style={{
@@ -271,7 +269,11 @@ export const HomeScreen = () => {
 								alignItems: 'center',
 								borderRadius: 8,
 							}}
-							onPress={() => onNavigate('NativeParserScreen')}
+							onPress={() =>
+								navigation?.navigate('NativeParserScreen', {
+									params: form,
+								})
+							}
 						>
 							<Text
 								style={{

@@ -19,6 +19,9 @@ import { FilterChips } from '../atoms/FilterChips';
 import { DateRail } from '../components/DateRail';
 import { InlineShowDetails } from '../components/InlineShowDetails';
 import NativeInventory from '../specs/NativeInventory';
+import { StackNavigationProp } from '@react-navigation/stack';
+import { TNavigationRouterProps } from '../navigation/NavigationRouterProps';
+import { RouteProp } from '@react-navigation/native';
 
 type TSeatClass = {
 	code: string;
@@ -34,31 +37,22 @@ type TShowVM = {
 };
 type TTheatreVM = { cinemaId: string; cinemaName: string; shows: TShowVM[] };
 
-const DEFAULTS = {
-	languagesCount: 3,
-	formatsPerLanguage: 3,
-	// 7-day window: today .. +6
-	dateStart: dayjs().format('YYYY-MM-DD'),
-	dateEnd: dayjs().add(6, 'day').format('YYYY-MM-DD'),
-	cinemasCount: 6,
-	showsPerCinemaPerDay: 5,
-	includeSeatClasses: true,
-	seed: 42,
-};
+type TNavigationProps = StackNavigationProp<
+	TNavigationRouterProps,
+	'NativeParserScreen'
+>;
+type TRouteProps = RouteProp<TNavigationRouterProps, 'NativeParserScreen'>;
 
-const MASSIVE = {
-	languagesCount: 3,
-	formatsPerLanguage: 3,
-	dateStart: '2025-01-01',
-	dateEnd: '2025-01-30', // 30 days inclusive
-	cinemasCount: 6,
-	showsPerCinemaPerDay: 5,
-	includeSeatClasses: true, // increases payload size per row
-	seed: 42,
-} as const;
+interface INativeParserScreenProps {
+	navigation: TNavigationProps;
+	route: TRouteProps;
+}
 
-export const NativeParserScreen = () => {
+export const NativeParserScreen = ({ route }: INativeParserScreenProps) => {
 	// dataset lifecycle
+
+	const { params } = route?.params;
+
 	const [datasetId, setDatasetId] = useState<string | null>(null);
 	const [isLoading, setIsLoading] = useState(true);
 	const [timings, setTimings] = useState<{
@@ -127,7 +121,16 @@ export const NativeParserScreen = () => {
 				counts,
 			} = await NativeInventory.generateAndIndex(
 				{
-					...MASSIVE,
+					languagesCount: parseInt(params?.languagesCount),
+					formatsPerLanguage: parseInt(params?.formatsPerLanguage),
+					dateStart: params?.dateStart,
+					dateEnd: params?.dateEnd,
+					cinemasCount: parseInt(params?.cinemasCount),
+					showsPerCinemaPerDay: parseInt(
+						params?.showsPerCinemaPerDay,
+					),
+					includeSeatClasses: params?.includeSeatClasses,
+					seed: parseInt(params?.seed),
 				},
 				{},
 			);

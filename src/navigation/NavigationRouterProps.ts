@@ -1,5 +1,11 @@
+import { TBenchmarkFormState } from '../types/inventoryTypes';
+
 export type TNavigationRouterProps = {
 	HomeScreen: {};
-	RNParserScreen: {};
-	NativeParserScreen: {};
+	RNParserScreen: {
+		params: TBenchmarkFormState;
+	};
+	NativeParserScreen: {
+		params: TBenchmarkFormState;
+	};
 };
