@@ -4,6 +4,7 @@ import {
 	ActivityIndicator,
 	FlatList,
 	Pressable,
+	StatusBar,
 	StyleSheet,
 	Text,
 	View,
@@ -124,9 +125,12 @@ export const NativeParserScreen = () => {
 				datasetId: id,
 				timings,
 				counts,
-			} = await NativeInventory.generateAndIndex({
-				...MASSIVE
-			}, {});
+			} = await NativeInventory.generateAndIndex(
+				{
+					...MASSIVE,
+				},
+				{},
+			);
 			setDatasetId(id);
 			setTimings(timings);
 			setCounts(counts);
@@ -302,6 +306,7 @@ export const NativeParserScreen = () => {
 
 	const contentUI = (
 		<SafeAreaView style={styles.container}>
+			<StatusBar barStyle={'light-content'} />
 			{/* Benchmark bar */}
 			<View style={styles.hud}>
 				<Text style={styles.hudText}>

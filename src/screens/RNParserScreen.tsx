@@ -3,6 +3,7 @@ import {
 	ActivityIndicator,
 	FlatList,
 	Pressable,
+	StatusBar,
 	StyleSheet,
 	Text,
 	View,
@@ -192,6 +193,7 @@ export const RNParserScreen = () => {
 
 	const contentUI = (
 		<SafeAreaView style={styles.container}>
+			<StatusBar barStyle={'light-content'} />
 			{/* Benchmark bar */}
 			<View style={styles.hud}>
 				<Text style={styles.hudText}>
