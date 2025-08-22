@@ -218,6 +218,10 @@ export const HomeScreen = () => {
 							Include Seat Classes
 						</Text>
 						<Switch
+							thumbColor={'black'}
+							trackColor={{
+								true: '#999999',
+							}}
 							value={form.includeSeatClasses}
 							onValueChange={(v) =>
 								setField('includeSeatClasses', v)
