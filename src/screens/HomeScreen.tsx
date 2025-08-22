@@ -13,6 +13,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
 import { TNavigationProps } from '../navigation/NavigationRouter';
 import { isAndroid } from '../utils/platformUtils';
+import { Field } from '../atoms/Field';
 
 const DEFAULTS = {
 	languagesCount: 3,
@@ -297,44 +298,5 @@ export const HomeScreen = () => {
 				</ScrollView>
 			</SafeAreaView>
 		</>
-	);
-};
-
-/** Small labeled input component */
-const Field = ({
-	label,
-	value,
-	onChangeText,
-	keyboardType,
-	placeholder,
-}: {
-	label: string;
-	value: string;
-	onChangeText: (t: string) => void;
-	keyboardType?: 'default' | 'number-pad' | 'numbers-and-punctuation';
-	placeholder?: string;
-}) => {
-	return (
-		<View style={{ marginTop: 12 }}>
-			<Text style={{ fontSize: 12, color: '#555', marginBottom: 6 }}>
-				{label}
-			</Text>
-			<TextInput
-				value={value}
-				onChangeText={onChangeText}
-				placeholder={placeholder}
-				keyboardType={keyboardType ?? 'default'}
-				style={{
-					height: 44,
-					borderRadius: 8,
-					paddingHorizontal: 12,
-					borderWidth: 1,
-					borderColor: '#e5e5e5',
-					backgroundColor: '#fff',
-					color: '#111',
-				}}
-				placeholderTextColor='#9ca3af'
-			/>
-		</View>
 	);
 };
