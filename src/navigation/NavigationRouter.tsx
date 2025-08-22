@@ -4,6 +4,8 @@ import { HomeScreen } from '../screens/HomeScreen';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { RNParserScreen } from '../screens/RNParserScreen';
 import { NativeParserScreen } from '../screens/NativeParserScreen';
+import { Platform } from 'react-native';
+import { isAndroid } from '../utils/platformUtils';
 
 const AppNavigator = createNativeStackNavigator<TNavigationRouterProps>();
 export type TNavigationProps = StackNavigationProp<TNavigationRouterProps, any>;
@@ -30,13 +32,15 @@ export const NavigationRouter = () => {
 					headerShown: false,
 				}}
 			/>
-			<AppNavigator.Screen
-				name={'NativeParserScreen'}
-				component={NativeParserScreen}
-				options={{
-					headerShown: false,
-				}}
-			/>
+			{isAndroid ? (
+				<AppNavigator.Screen
+					name={'NativeParserScreen'}
+					component={NativeParserScreen}
+					options={{
+						headerShown: false,
+					}}
+				/>
+			) : null}
 		</AppNavigator.Navigator>
 	);
 };
