@@ -6,7 +6,6 @@ import {
 	StatusBar,
 	Switch,
 	Text,
-	TextInput,
 	View,
 } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -14,6 +13,7 @@ import { useNavigation } from '@react-navigation/native';
 import { TNavigationProps } from '../navigation/NavigationRouter';
 import { isAndroid } from '../utils/platformUtils';
 import { Field } from '../atoms/Field';
+import { TBenchmarkFormState } from '../types/inventoryTypes';
 
 const DEFAULTS = {
 	languagesCount: 3,
@@ -26,21 +26,10 @@ const DEFAULTS = {
 	seed: 42,
 } as const;
 
-type TFormState = {
-	languagesCount: string;
-	formatsPerLanguage: string;
-	dateStart: string;
-	dateEnd: string;
-	cinemasCount: string;
-	showsPerCinemaPerDay: string;
-	includeSeatClasses: boolean;
-	seed: string;
-};
-
 export const HomeScreen = () => {
 	const navigation = useNavigation<TNavigationProps>();
 
-	const [form, setForm] = useState<TFormState>({
+	const [form, setForm] = useState<TBenchmarkFormState>({
 		languagesCount: String(DEFAULTS.languagesCount),
 		formatsPerLanguage: String(DEFAULTS.formatsPerLanguage),
 		dateStart: DEFAULTS.dateStart,
@@ -52,8 +41,8 @@ export const HomeScreen = () => {
 	});
 
 	const setField = useCallback(
-		(k: keyof TFormState, v: string | boolean) =>
-			setForm((s) => ({ ...s, [k]: v } as TFormState)),
+		(k: keyof TBenchmarkFormState, v: string | boolean) =>
+			setForm((s) => ({ ...s, [k]: v } as TBenchmarkFormState)),
 		[],
 	);
 

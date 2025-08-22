@@ -1,3 +1,14 @@
+export type TBenchmarkFormState = {
+	languagesCount: string;
+	formatsPerLanguage: string;
+	dateStart: string;
+	dateEnd: string;
+	cinemasCount: string;
+	showsPerCinemaPerDay: string;
+	includeSeatClasses: boolean;
+	seed: string;
+};
+
 export interface ISeatClass {
 	code: string;
 	name?: string;
